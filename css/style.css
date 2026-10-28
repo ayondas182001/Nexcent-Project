@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* common css start */
+body{
+    font-family: "Inter", sans-serif;
+}
+h2{
+    font-weight: 600;
+    font-size: 36px;
+    color: #4D4D4D;
+}
+p{
+    font-size: 14px;
+    color: #717171;
+}
+.fillup{
+    border-radius: 6px;
+    padding: 10px 20px;
+    background-color: #4CAF4F;
+    color: white;
+}
+/* common css end */
+
+
+/* nav bar start */
+.logo,
+.button{
+    width: auto;
+}
+.menu{
+    text-align: center;
+    margin-left: 166px;
+    width: auto;
+    padding: 20px 0;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    color: #18191f;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 20px ;
+}
+.menu ul li a:hover{
+    font-weight: bold;
+}
+.menu .active{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #18191f;
+}
+.ghost{
+    color: #4CAF4F;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-right: 14px;
+}
+.button{
+    margin-left: 125px;
+    display: flex;
+    justify-content: flex-end;
+}
+/* nav bar end */
+
+/* banner part start */
+.banner_heading{
+    width: 60%;
+}
+.banner_heading h6{
+    font-weight: 600;
+    font-size: 64px;
+    color: #4D4D4D;
+}
+.banner_heading span{
+    color: #4CAF4F;
+}
+.banner_heading p{
+    color: #717171;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.banner_image{
+    padding: 96px 144px 0 96px;
+    width: 40%;
+}
+.banner_image img{
+    width: 391px;
+    height: 407px;
+}
+/* banner part end */
+
+/* client part start */
+#client h2{
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+}
+#client p{
+    margin-bottom: 16px;
+    text-align: center;
+}
+#client .row{
+    justify-content: space-between;
+}
+/* client part end */
+
+/* community part start */
+#community{
+    margin-top: 40px;
+    /* background-color: #4CAF4F; */
+}
+#community h2{
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+}
+#community p{
+    margin-bottom: 40px;
+    text-align: center;
+}
+#community .icon{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 ;
+}
+/* community part end */
+
+/* pixelgrade part start */
+#pixelgrade{
+    /* background-color: aqua; */
+    margin-top: 50px;
+}
+.pixelgrade_image{
+    width: 30%;
+    /* background-color: #644cc7; */
+}
+.pixelgrade_heading{
+    width: 70%;
+    /* background-color: brown; */
+    padding: 0px  250px; 
+}
+.pixelgrade_heading p{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* pixelgrade part end */
+
+/* helping part start */
+#helping{
+    background-color: #F5F7FA;
+    padding: 64px 144px;
+}
+.helping_heading{
+    width: 50%;
+}
+.helping_heading h2{
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 36px;
+    color: #4D4D4D;
+}
+.helping_heading span{
+    color: #4CAF4F;
+}
+.helping_count{
+    width: 50%;
+}
+.count1,.count2,
+.count3, .count4{
+    width:50%;
+    display: flex;
+    margin-top: 40px;
+}
+.count_text{
+    margin-left: 20px;
+}
+/* helping part end */
+
+/* care part start */
+
+#care h2{
+    text-align: center;
+}
+
+#care p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+.care_image{
+    position: relative;
+    width: 30%;
+    margin-top: 20px;
+}
+.care_text{
+    position: absolute;
+    left: 25px;
+    top: 190px;
+    width: 317px;
+    height: 176px;
+    background-color: #F5F7FA;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #717171;
+    box-shadow: 0 8px 16px 0 rgba(171, 190, 209, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    padding:  16px 0px ;
+    transform: scale(0.3);
+    transition: all 1s ease-in-out;
+}
+.care_image:hover .care_text{
+   opacity: 1;
+   visibility: visible;
+   transform: scale(1);
+   
+}
+.care_text h4{
+   margin-bottom: 30px;
+}
+/* care part end */
